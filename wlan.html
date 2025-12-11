@@ -1,6 +1,6 @@
 <script type="text/javascript">
-    RED.nodes.registerType('Wi-Fi', {
-        category: 'NITMC_Wi-Fi-Node',
+    RED.nodes.registerType('wlan', {
+        category: 'wlan-Node',
         color: "#ffe3a6",
         defaults: {
             name: { value: "" },
@@ -13,7 +13,7 @@
         icon: "light.svg",
         align: "right",
         label: function () {
-            return this.name || "Wi-Fi";
+            return this.name || "wlan";
         },
 
         oneditprepare: function() {
@@ -22,7 +22,7 @@
     });
 </script>
 
-<script type="text/html" data-template-name="Wi-Fi">
+<script type="text/html" data-template-name="wlan">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> 名前</label>
         <input type="text" id="node-input-name" placeholder="名前">
@@ -45,6 +45,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="Wi-Fi">
+<script type="text/x-red" data-help-name="wlan">
     <p>Wi-Fiに初期接続する際に用いるノードです。</p>
 </script>

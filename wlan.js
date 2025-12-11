@@ -1,6 +1,6 @@
 module.exports = function(RED) {
     
-    function WIFI_Node(config) {
+    function wlan_Node(config) {
         RED.nodes.createNode(this, config);
         var node = this;
 
@@ -15,5 +15,5 @@ module.exports = function(RED) {
          });
     }
 
-    RED.nodes.registerType("Wi-Fi",WIFI_Node);
+    RED.nodes.registerType("wlan",wlan_Node);
 }

@@ -1,13 +1,13 @@
 {
-    "name" : "node-red-contrib-mct-wifi",
+    "name" : "node-red-contrib-wlan",
     "version": "1.0.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Suzune2741/node-red-contrib-MCT-wifi"
+        "url": "https://github.com/Suzune2741/node-red-contrib-wlan"
     },
     "node-red" : {
         "nodes": {
-            "lower-case": "Wi-Fi.js"
+            "lower-case": "wlan.js"
         }
     }
 }
