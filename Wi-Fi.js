@@ -4,11 +4,12 @@ module.exports = function(RED) {
         RED.nodes.createNode(this, config);
         var node = this;
 
-        this.SSID = config.SSID;
-        this.PASSWARD = config.PASSWARD;
+        this.mode = config.mode;
+        this.ssid = config.ssid;
+        this.password = config.password;
         
         node.on('input', function () {
-            if (node.PASSWARD == "" && node.SSID == "") {
+            if (node.password == "" && node.ssid == "") {
                 throw new Error("SSIDまたはパスワードが入力されていません");
             }
          });
