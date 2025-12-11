@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Wi-Fi', {
+        category: 'NITMC_Wi-Fi-Node',
+        color: "#ffe3a6",
+        defaults: {
+            name: { value: "" },
+            ssid: { value: "" }, 
+            password: { value: "" }
+        },
+        inputs: 1,
+        outputs: 0,
+        icon: "light.svg",
+        align: "right",
+        label: function () {
+            return this.name || "Wi-Fi";
+        },
+
+        oneditprepare: function() {
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="Wi-Fi">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> 名前</label>
+        <input type="text" id="node-input-name" placeholder="名前">
+    </div>
+    <div class="form-row">
+        <label for="node-input-mode"><i class="icon-tag"></i>モード </label>
+        <select id="node-input-mode">
+            <option value="STA">ステーションモード</option>
+            <option value="AP">アクセスポイントモード</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-ssid"><i class="icon-tag"></i> SSID</label>
+        <input type="text" id="node-input-ssid" placeholder="SSIDを入力">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-password"><i class="icon-tag"></i> PASSWORD</label>
+        <input type="text" id="node-input-password" placeholder="パスワードを入力">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Wi-Fi">
+    <p>Wi-Fiに初期接続する際に用いるノードです。</p>
+</script>

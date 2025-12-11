@@ -1,0 +1,10 @@
+{
+    "name" : "node-red-contrib-mct-wifi",
+    "version": "1.0.0",
+    
+    "node-red" : {
+        "nodes": {
+            "lower-case": "Wi-Fi.js"
+        }
+    }
+}
